@@ -2,6 +2,7 @@
 % Interaction of super-inertial waves with submesoscale cyclonic filaments
 % in the North Wall of the Gulf Stream JPO
 % JPOD170079
+%% WARNING: this is not designed to be a black box. Tuning is required to apply this to other problems.
 %% Dan Whitt (dwhitt@ucar.edu) Feb 22 2018
 %% Copyright Dan Whitt (dwhitt@ucar.edu) 
 %% Written With Matlab v2017b
@@ -16,9 +17,6 @@ rhoref = 1025; % rho_0
 fparam = 1.454.*1e-4;
 Rearth = 6378.1E3; % meters
 %%
-
-%save('fig10datafile.mat','y_g','Jplt','Iplt','ymean','z_g','omegamin','f','rhoref','bg','g','tstepsperphase','v0','minv','omega','dz','dy','Lz','Ly',...
- %   'F2','S2','N2','s_M','ug')
 load('fig10datafile.mat')
 
 figure;

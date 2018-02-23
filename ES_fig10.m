@@ -1,12 +1,7 @@
 % script to Solve Forced Eliassen-Sawyer Problem in arbitrary background
-% flow
-% Dan Whitt
+% flow as in Whitt and Thomas (2013) JPO
+% Dan Whitt 
 
-%clear all;
-%close all;
-%genEStanhH; % code to generate background flow and external forcing fields
-%genInoue;
- %omega = .95.*f; % oscillatory forcing frequency, 0 for steady forcing
  
  Jplt = 3:3:397;
  Iplt = 3:3:397;
@@ -128,15 +123,9 @@ contour(y_g./1000+ymean./1000,z_g,-rhoref.*bg(Jplt+1,Iplt+1)./g -1000,linspace(2
 clabel(c1,h1,'FontSize',12,'FontName','Arial','FontWeight','bold');
 ylabel('Depth [m]','FontSize',12,'FontName','Arial','FontWeight','bold');
 xlabel('Cross-Stream [km]','FontSize',12,'FontName','Arial','FontWeight','bold');
-%[c,h] = contour(y_g./1000,z_g,real(psi),8,'color',[.5 .5 .5],'linewidth',2);
 cbh = colorbar();
-%ylabel(cbh,'unitless')
-%ylabel(cbh,'|c_g|/|c_g|_{max}','FontSize',12,'FontName','Arial','FontWeight','bold');
 set(gca,'FontSize',12,'FontName','Arial','FontWeight','bold');
 title('(C) Normalized stream function, \omega = 1.13f','FontSize',12,'FontWeight','bold','FontName','Arial');
 xlim([-6.9 16.9])
 ylim([-183 -36])
-%load /users/dwhitt/work/ROMS_code/cmappinkblue
-%colormap(flipud(cmappinkblue))
-%colormap(cool)
 caxis([-.5 .5])

@@ -25,7 +25,7 @@ function [y_ray z_ray v_ray w_ray u_ray l_ray m_ray alphaout cgy_ray cgz_ray e_r
 % from the polarization relations and returning them as v_ray
 % and w_ray
 
-addpath('/Users/dwhitt/Google Drive/copymatlabstuff/matlabstuff/')
+%addpath('/Users/dwhitt/Google Drive/copymatlabstuff/matlabstuff/')
 
 % initialize flags
 reflectflag = 0;
