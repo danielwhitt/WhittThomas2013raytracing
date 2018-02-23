@@ -1,8 +1,10 @@
 # WhittThomas2013raytracing
-ray tracing and numerical solution. top level script is fig10_withnumericalsolution.m
+ray tracing and numerical solution. top level script is fig10_withnumericalsolution.m <br>
 WARNING: This is not a black box. Tuning is required to apply this to other problems.
-
-Whitt, Daniel B., and Leif N. Thomas. "Near-inertial waves in strongly baroclinic currents." Journal of Physical Oceanography 43.4 (2013): 706-725.
+<br><br>
+Please cite:
+<br>
+Whitt, Daniel B., and Leif N. Thomas. "Near-inertial waves in strongly baroclinic currents." Journal of Physical Oceanography 43.4 (2013): 706-725.<br>
 Whitt, Daniel B., et al. "Interaction of Superinertial Waves with Submesoscale Cyclonic Filaments in the North Wall of the Gulf Stream." Journal of Physical Oceanography 48.1 (2018): 81-99.
 
 
