@@ -42,7 +42,14 @@ function [y_ray z_ray v_ray w_ray u_ray l_ray m_ray alphaout cgy_ray cgz_ray e_r
 %s_M (=F2/S2) is the slope of absolute geostrophic momentum surfaces Mg=ug-fy
 %ug is the background geostrophic flow field (function of y,z)
 %various second derivatives of the background geostrophic velocity and buoyancy field: d2udy2,d2udz2,d2bdz2,d2bdy2,d2bdzdy,d2udzdy; these get set to zero in the test case.
-
+%OUTPUTS:
+%y_ray z_ray  (trajectory along the ray path)
+% v_ray w_ray u_ray (wave velocity scales along the ray path) 
+% l_ray m_ray (horizontal and vertical wavenumber along the ray path)
+% alphaout  (=l/m) 
+% cgy_ray cgz_ray (horizontal and vertical group velocity along the ray path)
+% e_ray (a measure of wave energy along the ray path)
+% s_Mray s_Bray (slopes of background absolute momentum and buoyancy surfaces interpolated to ray path)
 %%
 
 
