@@ -25,6 +25,7 @@
  nuek = Hek.^2.*f./2; % viscosity in the turbulent Ekman layer
  idxbotEk = ceil(Hek./abs(dz));
  DzX(1:idxbotEk,:) = -tau0./(rho0.*Hek.^2); % vertical derivative of X (momentum source)
+ % comment the line above and uncomment the line below to create a point source of wave energy, as in Whitt and Thomas 2013
  %DzX(10:12,111:113) = -tau0./(rho0.*Hek.^2); % vertical derivative of X (momentum source)
 
  % add the geostrophic stress 
